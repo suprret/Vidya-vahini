@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import com.example.vidyavahini.navigation.VidyaVahiniNavGraph
 import com.example.vidyavahini.ui.theme.VidyaVahiniTheme
 
+// UI Setup
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
