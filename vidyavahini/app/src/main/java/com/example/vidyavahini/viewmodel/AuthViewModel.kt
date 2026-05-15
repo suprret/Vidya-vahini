@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import com.google.firebase.auth.FirebaseAuth
 
 data class AuthUiState(
     val step: AuthStep = AuthStep.PHONE_ENTRY,
@@ -47,6 +48,21 @@ class AuthViewModel(
             _uiState.update {
                 it.copy(isAuthenticated = true, step = AuthStep.DONE)
             }
+        }
+    }
+
+    // THIS IS THE FIXED LOGOUT FUNCTION, NOW SAFELY INSIDE THE CLASS
+    fun signOutAndReset() {
+        FirebaseAuth.getInstance().signOut()
+        _uiState.update {
+            it.copy(
+                step = AuthStep.PHONE_ENTRY, // Fixed: Matches your enum
+                phoneNumber = "",
+                otpCode = "",
+                errorMessage = null,
+                isLoading = false,
+                isAuthenticated = false
+            )
         }
     }
 
