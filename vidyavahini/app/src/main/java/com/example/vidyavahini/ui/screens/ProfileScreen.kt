@@ -32,7 +32,7 @@ import com.example.vidyavahini.ui.theme.Teal500
 fun ProfileScreen(onBack: () -> Unit) {
 
     var name          by remember { mutableStateOf("Supreet") }
-    var college       by remember { mutableStateOf("GEC Kolar") }
+    var college       by remember { mutableStateOf("STJIT RNR") }
     var parentNumber  by remember { mutableStateOf("+91 98765 43210") }
     var siblingNumber by remember { mutableStateOf("+91 91234 56789") }
     var isEditing     by remember { mutableStateOf(false) }
