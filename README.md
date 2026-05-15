@@ -38,8 +38,6 @@ Notify: Waiting students receive real-time updates and an ETA via the Compose-ba
 
 
 
-
-
 ##  Installation & Setup
 To run this project locally, follow these steps:
 
