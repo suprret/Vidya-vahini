@@ -51,7 +51,7 @@ class AuthViewModel(
         }
     }
 
-    // THIS IS THE FIXED LOGOUT FUNCTION, NOW SAFELY INSIDE THE CLASS
+    // Handles Firebase Logic
     fun signOutAndReset() {
         FirebaseAuth.getInstance().signOut()
         _uiState.update {
