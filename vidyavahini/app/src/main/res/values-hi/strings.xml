@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">विद्या-वाहिनी</string>
+    <string name="student_commute_buddy">छात्र यात्रा सहायक</string>
+    <string name="select_your_route">अपना मार्ग चुनें</string>
+    <string name="send_otp">OTP भेजें</string>
+    <string name="verify_otp">OTP सत्यापित करें</string>
+    <string name="enter_mobile">अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="ping_button">पिंग — बस मेरे स्टॉप से गुज़री!</string>
+    <string name="safe_reach">मैं सुरक्षित पहुंच गया!</string>
+    <string name="report_breakdown">ब्रेकडाउन रिपोर्ट करें</string>
+    <string name="live_position">लाइव स्थिति</string>
+    <string name="minutes_to_stop">आपके स्टॉप तक मिनट</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="dark_mode">डार्क मोड</string>
+    <string name="language">भाषा</string>
+    <string name="sign_out">साइन आउट</string>
+    <string name="routes_live">मार्ग लाइव</string>
+    <string name="community_powered">समुदाय-संचालित · रीयल-टाइम</string>
+</resources>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "508761045772",
+    "firebase_url": "https://vidyavahini-e5218-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "vidyavahini-e5218",
+    "storage_bucket": "vidyavahini-e5218.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508761045772:android:bfeb08f03c59d7d6cc2729",
+        "android_client_info": {
+          "package_name": "com.example.vidyavahini"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDagMud_bKna4yf68dTZ7D5GREICN-eQFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

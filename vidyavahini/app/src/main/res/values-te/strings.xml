@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">విద్యా-వాహిని</string>
+    <string name="student_commute_buddy">విద్యార్థి ప్రయాణ సహాయకుడు</string>
+    <string name="select_your_route">మీ మార్గాన్ని ఎంచుకోండి</string>
+    <string name="send_otp">OTP పంపండి</string>
+    <string name="verify_otp">OTP ధృవీకరించండి</string>
+    <string name="enter_mobile">మీ మొబైల్ నంబర్ నమోదు చేయండి</string>
+    <string name="ping_button">పింగ్ — బస్సు నా స్టాప్ దాటింది!</string>
+    <string name="safe_reach">నేను సురక్షితంగా చేరుకున్నాను!</string>
+    <string name="report_breakdown">బ్రేక్‌డౌన్ రిపోర్ట్ చేయండి</string>
+    <string name="live_position">లైవ్ స్థానం</string>
+    <string name="minutes_to_stop">మీ స్టాప్‌కు నిమిషాలు</string>
+    <string name="settings">సెట్టింగులు</string>
+    <string name="profile">ప్రొఫైల్</string>
+    <string name="dark_mode">డార్క్ మోడ్</string>
+    <string name="language">భాష</string>
+    <string name="sign_out">సైన్ అవుట్</string>
+    <string name="routes_live">మార్గాలు లైవ్</string>
+    <string name="community_powered">సమాజ-ఆధారిత · నిజ-సమయం</string>
+</resources>

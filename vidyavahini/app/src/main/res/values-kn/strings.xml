@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ವಿದ್ಯಾ-ವಾಹಿನಿ</string>
+    <string name="student_commute_buddy">ವಿದ್ಯಾರ್ಥಿ ಪ್ರಯಾಣ ಸಹಾಯಕ</string>
+    <string name="select_your_route">ನಿಮ್ಮ ಮಾರ್ಗವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ</string>
+    <string name="send_otp">OTP ಕಳುಹಿಸಿ</string>
+    <string name="verify_otp">OTP ಪರಿಶೀಲಿಸಿ</string>
+    <string name="enter_mobile">ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ</string>
+    <string name="ping_button">ಪಿಂಗ್ — ಬಸ್ ನನ್ನ ನಿಲ್ದಾಣ ದಾಟಿತು!</string>
+    <string name="safe_reach">ನಾನು ಸುರಕ್ಷಿತವಾಗಿ ತಲುಪಿದ್ದೇನೆ!</string>
+    <string name="report_breakdown">ಬ್ರೇಕ್‌ಡೌನ್ ವರದಿ ಮಾಡಿ</string>
+    <string name="live_position">ನೇರ ಸ್ಥಾನ</string>
+    <string name="minutes_to_stop">ನಿಮ್ಮ ನಿಲ್ದಾಣಕ್ಕೆ ನಿಮಿಷಗಳು</string>
+    <string name="settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="profile">ಪ್ರೊಫೈಲ್</string>
+    <string name="dark_mode">ಡಾರ್ಕ್ ಮೋಡ್</string>
+    <string name="language">ಭಾಷೆ</string>
+    <string name="sign_out">ಸೈನ್ ಔಟ್</string>
+    <string name="routes_live">ಮಾರ್ಗಗಳು ನೇರವಾಗಿ</string>
+    <string name="community_powered">ಸಮುದಾಯ-ಚಾಲಿತ · ನೇರ-ಸಮಯ</string>
+</resources>
