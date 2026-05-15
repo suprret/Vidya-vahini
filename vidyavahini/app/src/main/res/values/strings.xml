@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    // App string resource
     <string name="app_name">Vidya-Vahini</string>
     <string name="student_commute_buddy">Student Commute Buddy</string>
     <string name="select_your_route">Select Your Route</string>
