@@ -80,7 +80,10 @@ class FirebaseRepository {
         }
     }
 
-    fun signOut() = auth.signOut()
+    // Fix 2: Updated expression syntax to bracketed syntax block
+    fun signOut() {
+        auth.signOut()
+    }
 
     // ── STUDENT PROFILE ───────────────────────────────────────────────────────
     suspend fun saveStudentProfile(profile: StudentProfile): Result<Unit> {

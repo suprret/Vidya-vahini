@@ -94,7 +94,9 @@ fun VidyaVahiniNavGraph(
                 onRouteSelected = { routeId ->
                     navController.navigate(VVScreens.tracker(routeId))
                 },
+                // Fix 3: Added authViewModel.signOut() before navigation
                 onSignOut = {
+                    authViewModel.signOut()
                     navController.navigate(VVScreens.LOGIN) {
                         popUpTo(0) { inclusive = true }
                     }
@@ -125,7 +127,9 @@ fun VidyaVahiniNavGraph(
         composable(VVScreens.SETTINGS) {
             SettingsScreen(
                 onBack           = { navController.popBackStack() },
+                // Fix 5: Added authViewModel.signOut() before navigation
                 onSignOut        = {
+                    authViewModel.signOut()
                     navController.navigate(VVScreens.LOGIN) {
                         popUpTo(0) { inclusive = true }
                     }

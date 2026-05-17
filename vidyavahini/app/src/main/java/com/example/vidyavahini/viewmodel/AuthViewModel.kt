@@ -12,7 +12,6 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import com.google.firebase.auth.FirebaseAuth
 
 data class AuthUiState(
     val step: AuthStep = AuthStep.PHONE_ENTRY,
@@ -43,26 +42,21 @@ class AuthViewModel(
     private var storedVerificationId: String? = null
     private var resendToken: PhoneAuthProvider.ForceResendingToken? = null
 
+    // Fix 1: Replaced old init block with checkAuthState()
     init {
-        if (repository.currentUser != null) {
+        checkAuthState()
+    }
+
+    private fun checkAuthState() {
+        val user = repository.currentUser
+        if (user != null) {
             _uiState.update {
                 it.copy(isAuthenticated = true, step = AuthStep.DONE)
             }
-        }
-    }
-
-    // Handles Firebase Logic
-    fun signOutAndReset() {
-        FirebaseAuth.getInstance().signOut()
-        _uiState.update {
-            it.copy(
-                step = AuthStep.PHONE_ENTRY, // Fixed: Matches your enum
-                phoneNumber = "",
-                otpCode = "",
-                errorMessage = null,
-                isLoading = false,
-                isAuthenticated = false
-            )
+        } else {
+            _uiState.update {
+                it.copy(isAuthenticated = false, step = AuthStep.PHONE_ENTRY)
+            }
         }
     }
 
@@ -185,6 +179,18 @@ class AuthViewModel(
                 )
             }
         }
+    }
+
+    // Fix 4: Added clean signOut function before goBackToPhone()
+    fun signOut() {
+        repository.signOut()
+        _uiState.update {
+            AuthUiState(
+                step = AuthStep.PHONE_ENTRY,
+                isAuthenticated = false
+            )
+        }
+        storedVerificationId = null
     }
 
     fun goBackToPhone() {
